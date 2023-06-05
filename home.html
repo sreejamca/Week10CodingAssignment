@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-sm bg-dark">
+ <div>
+    <a href="home.html">Home</a>
+    <a href="info.html">info</a>
+    <a href="ContactUs.html">Contact Us</a>
+ </div>
+</nav>
+
+</head>
+<body class="bg-light">
+
+<div class="offset-md-5">
+    <h3>Please fill in your details:</h3>
+</div><br>
+<form id="form" name="myform" class="needs-validation" novalidate="novalidate">
+    <div class="container bg-info">
+        <div class="row">
+        <div class="col-lg-6">
+        <label for="FirstName">First Name</label><br>
+        <input type="text" id="fname" required class="form-control" placeholder="FirstName">
+        <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-lg-6">
+        <label for="LastName">Last Name</label>
+        <input type="text"  id="Lname" required class="form-control"  placeholder="LastName">
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br>
+  
+    </div>
+    <div class="col-lg-6">
+        <label for="Contact">Contact Number</label><br>
+        <input type="text" id="Cnum" name="phone" class="form-control"required placeholder="Phone Number">
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br>
+
+    </div>
+    <div class="col-lg-6">
+        <label for="Email">Email</label>
+        <input type="text" id="email" required class="form-control" placeholder="Email">
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br>
+  
+    </div>
+    <div class="col-lg-6">
+        <label for="Zip">Zip-code</label><br>
+        <input type="text" id="zip"required class="form-control"placeholder="Zip-code">
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+  
+    </div>
+    <div class="col-lg-6">
+        <label for="state">State</label>
+        <input type="text" id="state" required class="form-control"placeholder="State">
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div><br><br>
+  
+    </div>
+    <div>
+        <input  type="button" id="btn" class="offset-sm-6 bg-secondary text-white" value="Submit"><br><br>
+    </div>
+</div>
+</div>
+</form>
+<div class="container-fluid">
+    <div class="offset-md-5">
+<h3>Customer Details:</h3>
+</div><br>
+</div>
+<div id="table" class="container-fluid">
+    <table class="table table-striped text-center" id="table1">
+        <tr id="tablerow">
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Contact Number</th>
+            <th>Email</th>
+            <th>Zip-code</th>
+            <th>State</th>
+            </tr>
+
+            
+    </table>
+</div>
+<script src="index.js"></script>  
+
+</body>
+</html>
